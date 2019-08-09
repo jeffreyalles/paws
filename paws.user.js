@@ -29,10 +29,14 @@ Paws.App = (function () {
         'r53': {href: '/route53/home#hosted-zones:'},
         'rds': {href: '/rds/home#dbinstances:'},
         'red': {href: '/redshift/home#cluster-list:'},
-        'ss3': {href: '/s3/home'},
+        's3': {href: '/s3/home'},
         'vpc': {href: '/vpc/home'},
-        'cft': {href: '/cloudformation/home'},
-        'da': {href: '/lambda/home'},
+        'cfn': {href: '/cloudformation/home'},
+        'lam': {href: '/lambda/home'},
+        'scm': {href: '/secretsmanager/'},
+        'sns' : {href: '/sns/v3/'},
+        'bill' : {href: '/billing/'},
+        'orgs' : {href: '/organizations/home'},
         // Pages
         'img': {href: '/ec2/v2/home#Images:sort=name'},
         'vol': {href: '/ec2/v2/home#Volumes:sort=desc:createTime'},
@@ -47,7 +51,7 @@ Paws.App = (function () {
         '/': {focus: '.gwt-TextBox:first'},
         '?': {open: 'https://github.com/tombenner/paws#shortcuts'},
         // lambda searchbox ???? WIP
-        'lam': {focus: '.inputAndSuggestions.input'}
+        'lasc': {focus: '.inputAndSuggestions.input'}
     };
 
     self.init = function () {
